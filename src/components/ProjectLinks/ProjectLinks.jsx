@@ -12,21 +12,14 @@ const ProjectLinks = ({
         <fieldset className="links__fieldset">
           <legend className="links__legend">No project is selected</legend>
           <div className="links__github">
-            <a href="/" className="links__btn links__btn--disabled">
+            <a href="/" className="links__btn links__btn--disabled" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
               <img
                 src="/images/icons/github.png"
                 alt="GitHub"
                 className="links__link-img"
+                style={{ marginRight: '8px' }}
               />
-              Client
-            </a>
-            <a href="/" className="links__btn links__btn--disabled">
-              <img
-                src="/images/icons/github.png"
-                alt="GitHub"
-                className="links__link-img"
-              />
-              Server
+              Repository
             </a>
           </div>
           <button className="links__live links__btn--disabled">
@@ -37,10 +30,6 @@ const ProjectLinks = ({
             />
             Learn more about the project
           </button>
-          <a href="#" className="links__live links__btn--disabled">
-            <div className="links__live-pulse"></div>
-            Live
-          </a>
         </fieldset>
       </section>
     );
@@ -116,15 +105,6 @@ const ProjectLinks = ({
           />
           Learn more about {selectedProjectDetails[0].title}
         </button>
-        <a
-          href={selectedProjectDetails[0].address}
-          className="links__live"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="links__live-pulse links__live-pulse--enabled"></div>
-          Live
-        </a>
       </fieldset>
     </section>
   );

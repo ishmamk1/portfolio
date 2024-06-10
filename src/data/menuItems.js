@@ -1,8 +1,8 @@
 export const menuItems = [
   {
     id: 1,
-    name: "About me",
-    alt: "About me",
+    name: "About Me",
+    alt: "About Me",
     icon: "/images/icons/about-me.png",
     action: "about-me",
     type: "menu",
@@ -10,8 +10,8 @@ export const menuItems = [
   },
   {
     id: 2,
-    name: "Contact me",
-    alt: "Contact me",
+    name: "My Experience",
+    alt: "My Experience",
     icon: "/images/icons/contact-me.png",
     action: "contact-me",
     type: "menu",
@@ -19,8 +19,8 @@ export const menuItems = [
   },
   {
     id: 3,
-    name: "My projects",
-    alt: "My projects",
+    name: "My Projects",
+    alt: "My Projects",
     icon: "/images/icons/projects.png",
     action: "projects",
     type: "menu",
@@ -28,12 +28,12 @@ export const menuItems = [
   },
   {
     id: 4,
-    name: "My CV",
-    alt: "My CV",
+    name: "My Resume",
+    alt: "My Resume",
     icon: "/images/icons/my-CV.png",
-    action: "my-CV",
-    type: "menu",
-    address: "no-address",
+    action: "no-action",
+    type: "link",
+    address: "https://drive.google.com/file/d/1tjGAATo1tiBkY4FSoEXgvjvcmBLpUExE/view",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const menuItems = [
     icon: "/images/icons/linkedin.png",
     action: "no-action",
     type: "link",
-    address: "https://www.linkedin.com/in/janoskocs",
+    address: "https://www.linkedin.com/in/khanishmam/",
   },
   {
     id: 6,
@@ -51,15 +51,6 @@ export const menuItems = [
     icon: "/images/icons/github.png",
     action: "no-action",
     type: "link",
-    address: "https://github.com/janoskocs",
-  },
-  {
-    id: 7,
-    name: "My Blog",
-    alt: "My Blog",
-    icon: "/images/icons/myblog.png",
-    action: "no-action",
-    type: "link",
-    address: "https://dev.to/janoskocs",
-  },
+    address: "https://github.com/ishmamk1",
+  }
 ];

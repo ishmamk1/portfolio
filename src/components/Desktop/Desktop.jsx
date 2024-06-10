@@ -1,5 +1,4 @@
 import AboutWindow from "../AboutWindow";
-import CVWindow from "../CVWindow";
 import ContactWindow from "../ContactWindow";
 import ProjectDetailWindow from "../ProjectDetailWindow";
 import ProjectsWindow from "../ProjectsWindow";
@@ -31,29 +30,26 @@ const Desktop = ({ handleOpenWindow, handleCloseWindow, activeWindow }) => {
                 handleCloseWindow={handleCloseWindow}
               />
             );
-          case "my-CV":
-            return <CVWindow handleCloseWindow={handleCloseWindow} />;
-
-          case "memovault":
+          case "musync":
             return (
               <ProjectDetailWindow
-                activeProject="memovault"
+                activeProject="musync"
                 handleCloseWindow={handleCloseWindow}
                 handleOpenWindow={handleOpenWindow}
               />
             );
-          case "sunset-restaurant":
+          case "linktree-clone":
             return (
               <ProjectDetailWindow
-                activeProject="sunset-restaurant"
+                activeProject="linktree-clone"
                 handleCloseWindow={handleCloseWindow}
                 handleOpenWindow={handleOpenWindow}
               />
             );
-          case "inviami":
+          case "CS135-Guide":
             return (
               <ProjectDetailWindow
-                activeProject="inviami"
+                activeProject="CS135-Guide"
                 handleCloseWindow={handleCloseWindow}
                 handleOpenWindow={handleOpenWindow}
               />

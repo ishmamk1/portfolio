@@ -5,54 +5,100 @@
 @use "../../styles/_partials/variables" as *;
 @use "../../styles/_partials/colours" as *;
 
-.contact {
-  width: 95%;
-  margin: $small auto 0;
-  font-size: $medium-half;
-
-  @include tablet {
-    width: 85%;
-    @include flex(null, space-around, center);
-  }
-
-  &__side {
-    @include tablet {
-      text-align: center;
-    }
-  }
-  &__img {
-    @include tablet {
-      width: 50%;
-    }
-  }
+.window {
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #c0c0c0;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
 }
 
-.form {
-  &__fieldset {
-    border: 1px solid $base-light;
-    @include flex(column);
-  }
-
-  &__name-input,
-  &__email-input,
-  &__message-input {
-    @include gui_input;
-    padding: $small-half;
-    font-size: $medium-half;
-    margin: $small-half 0;
-  }
-
-  &__message-input {
-    resize: none;
-    padding-bottom: $large * 2;
-  }
-
-  &__send {
-    @include button;
-    padding: $small;
-    text-align: center;
-  }
-  &__label {
-    text-align: left;
-  }
+.window__title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000080;
+  color: white;
+  padding: 5px;
+  border-bottom: 2px solid #000;
 }
+
+.window__title-img-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.window__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.window__title {
+  font-size: 14px;
+  margin: 0;
+}
+
+.window__button-close {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.window__body {
+  background-color: #c0c0c0;
+  padding: 10px;
+}
+
+.contact__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact__skill {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.contact__skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact__skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.contact__skill-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__skill-title {
+  font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact__skill-org,
+.contact__skill-date {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+}
+

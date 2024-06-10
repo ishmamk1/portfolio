@@ -55,11 +55,11 @@ const ProjectsWindow = ({ handleOpenWindow, handleCloseWindow }) => {
               className="options__btn"
               onClick={() => handleOpenWindow("contact-me")}
             >
-              Contact me
+              Work Experience
             </button>
             <a
               className="options__btn"
-              href="https://github.com/janoskocs"
+              href="https://github.com/ishmamk1"
               target="_blank"
               rel="noreferrer"
             >
@@ -67,7 +67,7 @@ const ProjectsWindow = ({ handleOpenWindow, handleCloseWindow }) => {
             </a>
             <a
               className="options__btn"
-              href="https://www.linkedin.com/in/janoskocs/"
+              href="https://www.linkedin.com/in/khanishmam"
               target="_blank"
               rel="noreferrer"
             >

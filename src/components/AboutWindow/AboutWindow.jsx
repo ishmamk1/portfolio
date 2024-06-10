@@ -34,47 +34,42 @@ const AboutWindow = ({ handleOpenWindow, handleCloseWindow }) => {
       <div className="window__body">
         <section className="about">
           <img
-            src={`/images/icons/janoskocs_mycomputer1.png`}
-            alt="Janos Kocs on a computer screen"
+            src={`/images/icons/ishmam.png`}
+            alt="Ishmam"
             className="about__image"
+            style={{
+              border: '2px solid #000', 
+              borderRadius: '4px', 
+              padding: '10px', 
+              backgroundColor: '#c0c0c0', 
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              transition: 'transform 0.2s ease-in-out',
+            }}
           />
           <div className="about__side">
             <h3 className="about__title">
-              János Kócs | Software Engineer {version}
+              Ishmam Khan
             </h3>
             <DividerLine orientation="horizontal" />
             <p className="about__text">
-              Hey there, I&apos;m János, I&apos;m making the web more
-              interactive. When I was a kid, my computer ran Windows 98, and it
-              was the coolest thing ever. That&apos;s where I got the
-              inspiration for my epic portfolio website.
+              Hey there, I&apos;m Ishmam! I&apos;m a current student at Hunter College studying Computer Science
+              with a double minor in Economics and Mathematics. I love to program (my favorite language is Python) and when
+              I&apos;m not coding I am either at my boxing gym, going on runs, or hanging out with friends. 
             </p>
             <DividerLine orientation="horizontal" />
 
             <p className="about__text">
-              I make these components work together:
+              This is my tech stack:
             </p>
             <div className="about__skills">{skillsJSX}</div>
           </div>
         </section>
         <div className="window__control-btns">
           <DividerLine orientation="horizontal" />
-          <button
-            className="window__cta-btn"
-            autoFocus={true}
-            onClick={() => handleOpenWindow("projects")}
-          >
-            What I do
-          </button>
-          <button
-            className="window__close-btn"
-            onClick={() => handleCloseWindow("about-me")}
-          >
-            Close
-          </button>
         </div>
       </div>
     </div>
   );
 };
 export default AboutWindow;
+
