@@ -40,12 +40,5 @@ export const experience =  [
         organization: "STEM For Kids",
         image: "images/logos/sfk.jpeg",
         date: "Jan 2023 - Dec 2023"
-    },
-    {
-        id: "s1",
-        name: "Information Technology Intern",
-        organization: "Computer Care and Learning",
-        image: "images/logos/ccal.webp",
-        date: "Jun 2023 - Aug 2023"
-    },
+    }
 ]
