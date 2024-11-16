@@ -1,5 +1,12 @@
 export const experience =  [
     {
+        id: "s1",
+        name: "Software Engineer Intern",
+        organization: "Capital One",
+        image: "images/logos/capitalone.jpg",
+        date: "Jun 2025 - Aug 2025"
+    },
+    {
       id: "s1",
       name: "DevOps Engineering Intern",
       organization: "RapidSOS",
