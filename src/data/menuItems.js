@@ -33,7 +33,7 @@ export const menuItems = [
     icon: "/images/icons/my-CV.png",
     action: "no-action",
     type: "link",
-    address: "https://drive.google.com/file/d/1QXfDa7GbAHBnS1vc2OLq08DnQPcoqlD3/view?usp=sharing",
+    address: "https://drive.google.com/file/d/14xQESGz43LjlGoGQr2ubHF5vvzctg-5d/view?usp=sharing",
   },
   {
     id: 5,
